@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: #f0f0f0;
+    color: #000000;
+}
+
+nav {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: white;
+    background-color: navy;
+    height: 19vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8.33vw;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+nav a {
+    text-decoration: underline;
+    color: white;
+    margin-left: 40px;
+    transition: color 0.3s;
+    
+}
+
+nav a:hover {
+    color: lightblue;
+    text-decoration: underline;
+}
+
+nav #navega {
+    display: flex;
+    align-items: right;
+}
+
+header {
+    height: 60vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8.33vw;
+    background-color: #e9f4fa;
+    color: #000000;
+}
+
+header h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 50px;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+    
+}
+
+header p {
+    font-size: 20px;
+    line-height: 1.5;
+    animation-name: slide-up;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    max-width: 800px;
+}
+
+header #contacto {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    background-color: lightblue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px;
+    display: inline-block;
+    
+}
+
+header #contacto:hover {
+    background-color: rgb(121, 155, 194);
+}
+
+main {
+    width: 100%;
+    padding: 40px 8.33vw;
+    background-color: #e9f4fa;
+}
+
+section {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+section div {
+    width: 48%;
+    margin-bottom: 20px;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    text-align: center;
+}
+
+section div h2 {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+section div h2:hover {
+    color: navy;
+}
+
+section div img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-out, filter 0.3s;
+}
+
+section div img:hover {
+    transform: scale(0.95);
+    filter: saturate(80%);
+}
+
+video {
+    width: 100%;
+}
+
+section video + h2 {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+section video + h2:hover {
+    color: navy;
+}
+
+footer {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    margin-top: 30px;
+    padding: 20px 8.33vw;
+    background-color: rgb(32, 104, 143);
+    text-align: center;
+    color: white;
+    background-image: url('Imágenes/fondo.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: repeat; 
+    height: 100px; 
+    color: white; 
+    padding-top: 3px;
+    padding-bottom:25px;
+}
+footer .logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .animated-logo {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    color: white;
+    margin-top: 10px;
+    animation: spin 3s linear infinite;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
